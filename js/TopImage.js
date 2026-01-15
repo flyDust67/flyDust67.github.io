@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 2. 创建视频元素
     const video=document.createElement('video');
-    video.src='/imgs/1080p.mp4';
+    video.src='./imgs/1080p.mp4';
     video.loop=true;
     video.muted=true;
     video.autoplay=true;
