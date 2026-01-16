@@ -4,6 +4,45 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2026/01/16/python%E5%BA%93/%E7%AC%AC%E4%B8%80%E5%A4%A9/"/>
+      <url>/2026/01/16/python%E5%BA%93/%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2026/01/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E7%AC%AC%E4%BA%8C%E5%A4%A9/"/>
+      <url>/2026/01/16/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E7%AC%AC%E4%BA%8C%E5%A4%A9/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搭建博客日志-第三天</title>
+      <link href="/2026/01/16/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%BF%97/%E7%AC%AC%E4%B8%89%E5%A4%A9/"/>
+      <url>/2026/01/16/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%BF%97/%E7%AC%AC%E4%B8%89%E5%A4%A9/</url>
+      
+        <content type="html"><![CDATA[<p>完成了giscus评论的配置，完成了本地搜索的配置（注意use不要使用数组形式），修复了路径重复拼接问题，修复了脚本路径问题</p><ul><li><p>giscus评论配置：</p><ul><li><p>在githubapp中下载giscus</p></li><li><p>将一个仓库discussions打开</p></li><li><p>进入<a href="https://giscus.app/zh-CN">giscus</a>官网配置，生成对应js代码</p></li><li><p>根据响应主题修改hexo配置文件（我使用butterfly主题，修改butterfly的配置文件，在giscus部分根据生成的js代码补充repo,repo_id,category_id三项）</p></li></ul></li><li><p>本地搜索配置</p></li></ul><p>修改butterfly配置文件</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line"><span class="attr">use:</span> <span class="string">local_search</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>修改hexo配置文件</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">10000</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><blockquote><p>可选，增加search.xml模板</p><p>在search：下增加template: ./search.xml</p><p>并依据路径添加search.xml文件，可使用该文件<a href="https://github.com/wzpan/hexo-generator-search/blob/master/demo_output/search.xml">https://github.com/wzpan/hexo-generator-search/blob/master/demo_output/search.xml</a></p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>炉石</title>
       <link href="/2026/01/16/%E7%82%89%E7%9F%B3%E6%97%A5%E5%BF%97/%E7%AC%AC%E4%B8%80%E5%A4%A9/"/>
       <url>/2026/01/16/%E7%82%89%E7%9F%B3%E6%97%A5%E5%BF%97/%E7%AC%AC%E4%B8%80%E5%A4%A9/</url>
@@ -25,19 +64,6 @@
             <tag> 记录 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>搭建博客日志-第三天</title>
-      <link href="/2026/01/16/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%BF%97/%E7%AC%AC%E4%B8%89%E5%A4%A9/"/>
-      <url>/2026/01/16/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%BF%97/%E7%AC%AC%E4%B8%89%E5%A4%A9/</url>
-      
-        <content type="html"><![CDATA[<p>完成了giscus评论的配置，完成了本地搜索的配置（注意use不要使用数组形式），修复了路径重复拼接问题，修复了脚本路径问题</p><ul><li><p>giscus评论配置：</p><ul><li><p>在githubapp中下载giscus</p></li><li><p>将一个仓库discussions打开</p></li><li><p>进入<a href="https://giscus.app/zh-CN">giscus</a>官网配置，生成对应js代码</p></li><li><p>根据响应主题修改hexo配置文件（我使用butterfly主题，修改butterfly的配置文件，在giscus部分根据生成的js代码补充repo,repo_id,category_id三项）</p></li></ul></li><li><p>本地搜索配置</p></li></ul><p>修改butterfly配置文件</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line"><span class="attr">use:</span> <span class="string">local_search</span></span><br><span class="line"><span class="string">...</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>修改hexo配置文件</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">format:</span> <span class="string">html</span></span><br><span class="line">  <span class="attr">limit:</span> <span class="number">10000</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><blockquote><p>可选，增加search.xml模板</p><p>在search：下增加template: ./search.xml</p><p>并依据路径添加search.xml文件，可使用该文件<a href="https://github.com/wzpan/hexo-generator-search/blob/master/demo_output/search.xml">https://github.com/wzpan/hexo-generator-search/blob/master/demo_output/search.xml</a></p></blockquote>]]></content>
-      
-      
       
     </entry>
     
