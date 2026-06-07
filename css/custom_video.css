@@ -1,0 +1,54 @@
+#top-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#top-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+/* 确保标题和内容在视频上方 */
+#page-header #site-info,
+#page-header #page-site-info,
+#page-header #post-info {
+  position: relative;
+  z-index: 1;
+}
+
+/* 为视频添加半透明遮罩，增强文字可读性 */
+#page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+#page-header .full_page::before {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#page-header .post-bg::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 响应式视频设置 */
+@media (max-width: 768px) {
+  #top-video {
+    object-position: center;
+  }
+}
